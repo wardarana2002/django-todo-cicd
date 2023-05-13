@@ -1,0 +1,12 @@
+pipeline {
+  agent {
+    docker { image 'django:latest' }
+  }
+  stages {
+    stage('Build') {
+      steps {
+        sh 'python3 manage.py runserver'
+      }
+    }
+  }
+}
