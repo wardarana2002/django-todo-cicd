@@ -24,7 +24,7 @@ email = browser.find_element(By.ID, "input-email")
 
 
 last_name.send_keys("LastName")
-email.send_keys("sample_email@data.com")
+email.send_keys("sample_email1@data.com")
 telephone.send_keys("+351999888777")
 
 password = browser.find_element(By.ID, "input-password")
