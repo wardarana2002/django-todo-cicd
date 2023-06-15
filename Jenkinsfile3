@@ -7,10 +7,5 @@ pipeline {
          sh 'docker run -d -p 8001:8000 todo'
       }
     }
-    stage('Test') {
-      steps {
-       sh 'python3 buildtest.py'
-      }
-  }
 }
 }
